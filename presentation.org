@@ -18,3 +18,55 @@
 #+LaTeX_CLASS_OPTIONS: [bigger]
 #+BEAMER_FRAME_LEVEL: 2
 #+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+* TODO Presentation Draft One 					   :noexport:
+   DEADLINE: <2013-11-03 Sun>
+For this assignment please submit a PDF with a draft of your
+presentation. This is a GROUP assignment.
+
+Your document should detail all the following information:
+
+** Title (1 slide).
+Include title, presenters' names, and place.  The
+content of this slide is important for this submission.
+
+** Overview (1 slide).
+Show us the structure of your presentation. The
+content in this slide will change as you evolve your presentation but
+you should have a pretty good idea of its structure.
+
+** Problem (1 slide).
+Describe the problem you are investigating. The
+content of this slide is important for this submission.
+
+** Proposed Solution and/or Techniques (1 minimum slide for now).
+Please describe here very briefly options for solving the problem in
+4, no detail is needed for this draft submission.
+
+** Resources Needed.
+Please detail all resources you plan to use or have been using, this
+includes documents, websites, tools and systems.  These slide (set) is
+important in this submission.
+
+** Summary (1 slide).
+Please write a summary of the problem, the solutions and techniques,
+and the path forward. This slide can be empty for the purposes of this
+draft submission.
+
+** Questions (1 slide).
+Give a general idea of topics that you would like your audience to
+know after your presentation. In the final presentation you will need
+to have here 5 questions that your audience would be able to answer in
+5 minutes.
+
+** Citations.
+Not needed at this time, will be needed in the final presentation.
+
+** The grading of this presentation will be as follows:
+- DraftOne: 100
+- DraftTwo: 100
+- FinalPresDocs: 200
+- Delivery: 200
+- Total of 600
+
+
+* Intrusion Detection Systems
