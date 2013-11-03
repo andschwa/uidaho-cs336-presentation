@@ -26,8 +26,8 @@ presentation. This is a GROUP assignment.
 Your document should detail all the following information:
 
 ** Title (1 slide).
-Include title, presenters' names, and place.  The
-content of this slide is important for this submission.
+Include title, presenters' names, and place. The content of this slide
+is important for this submission.
 
 ** Overview (1 slide).
 Show us the structure of your presentation. The
@@ -46,6 +46,11 @@ Please describe here very briefly options for solving the problem in
 Please detail all resources you plan to use or have been using, this
 includes documents, websites, tools and systems.  These slide (set) is
 important in this submission.
+
+*** People
+- Mitch Parks
+- Larry Hughes
+- PK
 
 ** Summary (1 slide).
 Please write a summary of the problem, the solutions and techniques,
@@ -69,4 +74,19 @@ Not needed at this time, will be needed in the final presentation.
 - Total of 600
 
 
-* Intrusion Detection Systems
+* 2013-FA-CS-336-PR-01-AndyS-SheaN
+** Intrusion Detection Systems
+A presentation by:
+
+- Shea Newton
+- Andrew Schwartzmeyer
+
+For University of Idaho's Fall 2013 CS 336 - Introduction to
+Information Assurance, taught by Professor Daniel Conte de Leon
+
+* Overview
+** Problem Scope
+** Known Implementations
+** Summary
+
+* Problem
