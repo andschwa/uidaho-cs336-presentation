@@ -71,7 +71,8 @@ Not needed at this time, will be needed in the final presentation.
 - Total of 600
 
 
-* Prelude
+* Introduction
+** Prelude
 - Our "Overview" is the "Outline" page, which is clickable to the
   subsections of this presentation
 - The articles in the "Resources" section are clickable hyperlinks
