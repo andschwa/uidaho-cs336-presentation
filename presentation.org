@@ -73,6 +73,21 @@ Not needed at this time, will be needed in the final presentation.
 - Delivery: 200
 - Total of 600
 
+
 * Problem
-Monitoring for unautorized access and mailicious activity in a
-computer system or network.
+** Problem
+*** What is an Intrusion Detection System (IDS)?
+An IDS is a set of policies, programs, and techniques for monitoring a
+computer network for unauthorized access and mailicious
+activity. Specifically, this is a passive system. Its intent is
+produce a report for administrators of detected policy violations,
+which may or may not indicate that an intrustion took place.
+
+*** What is an Intrusion Prevention System (IPS)?
+In constrast to IDSs' passive nature, an IPS is reactive. When an IPS
+determines (above a specified certainty threshold) thath an intrustion
+is taking place, it will reset the intruder's connection and
+automatically deny further connection attempts from the IP the
+intruder was using. These systems are far from perfect (an intruder
+may easily change to a random, new IP address and no longer be
+blocked), but make an attack more difficult.
