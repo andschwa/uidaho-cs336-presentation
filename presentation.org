@@ -38,19 +38,16 @@ you should have a pretty good idea of its structure.
 Describe the problem you are investigating. The
 content of this slide is important for this submission.
 
-** TODO Proposed Solution and/or Techniques (1 minimum slide for now).
+** DONE Proposed Solution and/or Techniques (1 minimum slide for now).
 Please describe here very briefly options for solving the problem in
 4, no detail is needed for this draft submission.
 
 ** TODO Resources Needed.
 Please detail all resources you plan to use or have been using, this
-includes documents, websites, tools and systems. These slide (set) is
+includes documents, websites, tools and systems. These slides (set) is
 important in this submission.
 
 *** People
-- Mitch Parks
-- Larry Hughes
-- PK
 
 ** DONE Summary (1 slide).
 Please write a summary of the problem, the solutions and techniques,
@@ -74,24 +71,31 @@ Not needed at this time, will be needed in the final presentation.
 - Total of 600
 
 
+* Prelude
+- Our "Overview" is the "Outline" page, which is clickable to the
+  subsections of this presentation
+- The articles in the "Resources" section are clickable hyperlinks
+- The buttons at the bottom-right corner of the page can be used for
+  navigation
 * Problem
 ** Inescapable Vulnerabilities of Computer Systems
-Computer systems and networks thereof are vulnerable to unauthorized
-access and malicious activity. This vulnerability cannot be fully
-mitigated because computer systems are used and maintained by humans,
-which by their nature are fallible. Therefore, system and network
-administrators must implement accounting techniques which record
-possible violations for further review.
+- Computer systems and networks thereof are vulnerable to unauthorized
+  access and malicious activity. This vulnerability cannot be fully
+  mitigated because computer systems are used and maintained by
+  humans, which by their nature are fallible.
+
+- System and network administrators must implement accounting
+  techniques which record possible violations for further review.
 
 * Proposed Solution
 ** Intrusion Detection Systems (IDS) for System and Network Accountability
-An IDS is a set of techniques using a combination of software,
-hardware, and administrative policies in order to monitor a computer
-system or network of systems for unauthorized access or malicious
-activity.
+- An IDS is a set of techniques using a combination of software,
+  hardware, and administrative policies in order to monitor a computer
+  system or network of systems for unauthorized access or malicious
+  activity.
 
-This monitoring is perodically transformed into a report for further
-review by the system's administrators.
+- This monitoring is perodically transformed into a report for further
+  review by the system's administrators.
 
 ** Signature-based IDS
 This type of IDS checks packets traveling across a network against a
@@ -100,6 +104,49 @@ known set of patterns recognized as likely attacks.
 ** Statistical anomaly-based IDS
 This type of IDS alerts when an abnormal event takes place on a
 network, such as a spike of traffic to a particular server or region.
+
+* Resources
+** Articles
+- [[http://en.wikipedia.org/wiki/Intrusion_detection_systems][WikiPedia's Article on Intrusion Detection Systems]]
+
+- [[http://csrc.nist.gov/publications/nistpubs/800-94/SP800-94.pdf][Guide to Intrusion and Prevention Systems]]
+
+- [[http://trygstad.rice.iit.edu:8000/Articles/UnderstandingIDS-EDPAC.pdf][Understanding Intrusion Detection Systems]]
+
+- [[http://www.phrack.org/issues.html?issue=56&id=11&mode=txt][A Strict Anomaly Detection Model for IDS]]
+
+- [[https://www.sans.org/reading-room/whitepapers/detection/understanding-intrusion-detection-systems-337][Understanding Intrusion Detection Systems]]
+
+** University of Idaho's Network Security Administrators
+
+- Mitch Parks
+  - Specializes in desktop security and manages many of ITS's security
+    measures.
+- Larry Hughes 
+  - System administrator for the Department of Computer Science.
+
+** Free IDS Tools (and detail about how they work)
+
+- [[http://www.snort.org][Snort]]
+
+  - "Snort's open source network-based intrusion detection system
+    (NIDS) has the ability to perform real-time traffic analysis and
+    packet logging on Internet Protocol (IP) networks. Snort performs
+    protocol analysis, content searching, and content matching."
+
+- [[http://aide.sourceforge.net][AIDE]]
+
+  - "AIDE (Advanced Intrusion Detection Environment) is a file and
+    directory integrity checker."
+
+- [[https://www.prelude-ids.org][Prelude-IDS]]
+
+  - "Prelude collects, normalizes, sorts, aggregates, correlates and
+    reports all security-related events independently of the product
+    brand or license giving rise to such events."
+
+** Slideshow
+Slideshow created with LaTeX Beamer package, exported from Emacs org-mode.
 
 * Summary
 ** Summary
