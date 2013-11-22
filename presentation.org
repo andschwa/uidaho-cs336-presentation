@@ -212,6 +212,11 @@ activity, and alarms when they match [Pfleeger s7.5].}
 - Larry Hughes 
   - System administrator for the Department of Computer Science.
 
+- Questions for above people:
+  - What Intrustion Detection Systems do you use?
+  - What are your experiences with IDS?
+  - What are the most common attacks the University of Idaho faces?
+
 ** Free IDS Tools (and detail about how they work)
 
 - [[http://www.snort.org][Snort]]
