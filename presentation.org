@@ -113,6 +113,8 @@ comments and notes in the same page.
   techniques which record possible violations for further review.
 
 \note{Sample notes}
+
+* Potential Solutions
 * Proposed Solution
 ** Intrusion Detection Systems (IDS) for System and Network Accountability
 - An IDS is a set of techniques using a combination of software,
@@ -198,3 +200,4 @@ Refer to problem
 4. Etc.
 ** What is the reactive counterpart to IDS?
 An Intrusion Prevention System is the reactive complement to an IDS.
+* References
