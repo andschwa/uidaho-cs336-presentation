@@ -19,7 +19,7 @@
 #+LaTeX_HEADER: \setbeameroption{show notes}
 #+BEAMER_FRAME_LEVEL: 2
 #+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
-* TODO Presentation Draft One 					   :noexport:
+* DONE Presentation Draft One					   :noexport:
   DEADLINE: <2013-11-03 Sun>
 For this assignment please submit a PDF with a draft of your
 presentation. This is a GROUP assignment.
@@ -70,6 +70,29 @@ Not needed at this time, will be needed in the final presentation.
 - FinalPresDocs: 200
 - Delivery: 200
 - Total of 600
+
+* TODO Presentation Draft Two					   :noexport:
+For this assignment please submit a PDF with a draft of your
+presentation. This is a GROUP assignment.
+
+Your document should detail all the following information:
+
+1. Title (1 slide). Include title, presenters' names, and place.  
+2. Overview (1 slide). Show us the structure of your presentation. 
+3. Problem (1 slide): Describe the problem you are investigating. 
+4. Potential Solutions.
+5. Presented Solution Introduction.
+6. Resources Used.
+7. Summary (1 slide).
+8. Questions (1 slide).
+
+Present 5 Quickly answerable questions. Your audience would be able to
+answer all these in 5 minutes.
+
+9. References.
+
+Please submit a PDF with one slide per page (top of the page) and your
+comments and notes in the same page.
 
 
 * Introduction
