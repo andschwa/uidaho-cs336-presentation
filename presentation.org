@@ -201,3 +201,28 @@ Refer to problem
 ** What is the reactive counterpart to IDS?
 An Intrusion Prevention System is the reactive complement to an IDS.
 * References
+
+- Pfleeger, Charles P., Pfleeger, Shari Lawrence. 2007. Security in
+  Computing. (4th. ed.). Person Education, Boston, MA.
+
+- WikiPedia Contributors, 'Intrusion detection system', Wikipedia, The
+  Free Encyclopedia, 22 July 2004, 10:55 UTC,
+  <http://en.wikipedia.org/wiki/Intrusion_detection_systems> [accessed
+  21 November 2013]
+
+- Scarfone, Karen. Mell, Peter. "Guide to Intrusion and Prevention
+  Systems (IDPS)." Retreieved November 21, 2013 from
+  http://csrc.nist.gov/publications/nistpubs/800-94/SP800-94.pdf
+
+
+- Mell, Peter. "Understanding Intrusion Detection Systems." EDPACS
+  Newsletter, Vol. 29, No. 5 (2001). 
+  http://trygstad.rice.iit.edu:8000/Articles/UnderstandingIDS-EDPAC.pdf
+
+- beetle & sashsa. "A Strict Anomaly Detection Model for IDS." Phrack
+  Magazine, Volume A, No. 38 (2000). 
+  http://www.phrack.org/issues.html?issue=56&id=11&mode=txt
+
+- SANS Institue InfoSec Reading Room. "Understanding Intrusion
+  Detection Systems." 2001.
+  https://www.sans.org/reading-room/whitepapers/detection/understanding-intrusion-detection-systems-337
