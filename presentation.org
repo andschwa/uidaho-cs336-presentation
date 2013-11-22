@@ -17,6 +17,9 @@
 #+LaTeX_CLASS: beamer
 #+LaTeX_CLASS_OPTIONS: [bigger]
 #+LaTeX_HEADER: \setbeameroption{show notes}
+#+LaTeX_HEADER: \let\oldframe\frame
+#+LaTeX_HEADER: \renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+
 #+BEAMER_FRAME_LEVEL: 2
 #+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
 * DONE Presentation Draft One					   :noexport:
@@ -96,7 +99,7 @@ Your document should detail all the following information:
 Present 5 Quickly answerable questions. Your audience would be able to
 answer all these in 5 minutes.
 
-** TODO References.
+** DONE References.
 
 ** TODO Notes/comments for each section
 
