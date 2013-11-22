@@ -15,13 +15,14 @@
 #+XSLT:
 #+startup: beamer
 #+LaTeX_CLASS: beamer
-#+LaTeX_CLASS_OPTIONS: [bigger]
+#+LaTeX_CLASS_OPTIONS: [presentation, smaller]
+#+BEAMER_FRAME_LEVEL: 2
+#+LaTeX_HEADER: \usetheme{PaloAlto}
 #+LaTeX_HEADER: \setbeameroption{show notes}
 #+LaTeX_HEADER: \let\oldframe\frame
 #+LaTeX_HEADER: \renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
 
-#+BEAMER_FRAME_LEVEL: 2
-#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+
 * DONE Presentation Draft One					   :noexport:
   DEADLINE: <2013-11-03 Sun>
 For this assignment please submit a PDF with a draft of your
@@ -101,7 +102,7 @@ answer all these in 5 minutes.
 
 ** DONE References.
 
-** TODO Notes/comments for each section
+** DONE Notes/comments for each section
 
 Please submit a PDF with one slide per page (top of the page) and your
 comments and notes in the same page.
