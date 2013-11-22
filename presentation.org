@@ -74,7 +74,7 @@ Not needed at this time, will be needed in the final presentation.
 - Delivery: 200
 - Total of 600
 
-* TODO Presentation Draft Two					   :noexport:
+* TODO Presentation Draft Two 					   :noexport:
 For this assignment please submit a PDF with a draft of your
 presentation. This is a GROUP assignment.
 
@@ -136,6 +136,21 @@ damage can be addressed, and administrators can put into effect
 regressive security measures.}
 
 * Potential Solutions
+** Potential Solutions
+
+- Intrusion Detection Systems
+  Identify, log and report suspicious activity. 
+
+- Intrusion Prevention Systems Identify, log, report AND attempt to
+  block or stop the suspicious activity.
+
+\note{IPS differs from stand-alone IDS in that it may take actions
+such as sending an alarm, dropping malicious packets, resetting a
+connection and/or blocking traffic from an offending IP
+address. Because an IPS acts independently of a system or network admin,
+it often casues more trouble than it's worth by denying legitimate
+users service unjustly or rasing excessive false alarms.}
+
 * Proposed Solution
 ** Intrusion Detection Systems (IDS) for System and Network Accountability
 - An IDS is a set of techniques using a combination of software,
@@ -243,12 +258,31 @@ Slideshow created with LaTeX Beamer package, exported from Emacs org-mode.
 
 * Summary
 ** Summary
-The intent of an IDS is to produce a report for
+- Why IDS?  
+  Computer systems and networks are vulnerable to
+  unauthorized access and malicious activity so administrators must
+  implement accounting techniques to record potential violations.
+ 
+- An IDS is: 
+  A set of techniques using a combination of software,
+  hardware, and administrative policies in order to monitor a computer
+  system or network of systems for policy violations, unauthorized
+  access, or malicious activity.
+
+- Signature-based IDS:
+   This type of IDS checks packets traveling across a network against a
+   known set of patterns recognized as likely attacks.
+
+- Statistical anomaly-based IDS:
+   This type of IDS alerts when an abnormal event takes place on a
+   network, such as a spike of traffic to a particular server or region.
+
+\note{The intent of an IDS is to produce a report for
 administrators of detected policy violations, which may or may not
 indicate that an intrusion took place. An IDS represents a passive
 methodology, which is in contrast to an Intrusion Prevention
 System. The latter attempts to be reactive, by for example, blocking a
-detected intruder's IP address from connecting).
+detected intruder's IP address from connecting).}
 
 * Questions
 ** What is an Intrusion Detection System?
