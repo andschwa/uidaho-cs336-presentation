@@ -170,12 +170,13 @@ flag combinations, wrong sizes, etc.), connection attempts from
 reserved IP addresses (indicating the real source was masked), e-mail
 containing viruses, exploit shellcode sequences in packets (Domain
 Name Service / Network Interface Card buffer overflow), flood of
-packets (Denial Of Service), etc. [Frederick]. The major problem is
-that attackers are well-aware of this type of checking, and can
-(easily) alter their attack in such a way as to change its
-signature. This requires a SBIDS to maintain a frequently updated
-database, and slows down the IDS's ability to check against said
-database as its size grows. An SBIDS is also useless against new
+packets (Denial Of Service), etc. [Frederick].
+
+The major problem is that attackers are well-aware of this type of
+checking, and can (easily) alter their attack in such a way as to
+change its signature. This requires a SBIDS to maintain a frequently
+updated database, and slows down the IDS's ability to check against
+said database as its size grows. An SBIDS is also useless against new
 (zero-day) exploits.}
 
 ** Statistical anomaly-based IDS
