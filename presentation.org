@@ -87,7 +87,7 @@ Your document should detail all the following information:
 
 ** DONE Problem (1 slide): Describe the problem you are investigating.
 
-** TODO Potential Solutions.
+** DONE Potential Solutions.
 
 ** DONE Presented Solution Introduction.
 
@@ -107,6 +107,8 @@ answer all these in 5 minutes.
 Please submit a PDF with one slide per page (top of the page) and your
 comments and notes in the same page.
 
+** TODO Fix Definition () thing
+** TODO Finalize formatting
 
 * Introduction
 ** Prelude
@@ -139,11 +141,18 @@ regressive security measures.}
 * Potential Solutions
 ** Potential Solutions
 
-- Intrusion Detection Systems
-  Identify, log and report suspicious activity. 
+*** Intrusion Detection Systems
+  :PROPERTIES:
+  :BEAMER_env: definition
+  :END:
+Identify, log and report suspicious activity. 
 
-- Intrusion Prevention Systems Identify, log, report AND attempt to
-  block or stop the suspicious activity.
+*** Intrusion Prevention Systems
+  :PROPERTIES:
+  :BEAMER_env: definition
+  :END:
+Identify, log, report AND attempt to block or stop the suspicious
+activity.
 
 \note{IPS differs from stand-alone IDS in that it may take actions
 such as sending an alarm, dropping malicious packets, resetting a
@@ -224,36 +233,52 @@ activity, and alarms when they match [Pfleeger s7.5].}
 
 ** University of Idaho's Network Security Administrators
 
-- Mitch Parks
-  - Specializes in desktop security and manages many of ITS's security
-    measures.
-- Larry Hughes 
-  - System administrator for the Department of Computer Science.
+*** Mitch Parks
+  :PROPERTIES:
+  :BEAMER_env: definition
+  :END:
+Specializes in desktop security and manages many of ITS's security
+measures.
 
-- Questions for above people:
-  - What Intrustion Detection Systems do you use?
-  - What are your experiences with IDS?
-  - What are the most common attacks the University of Idaho faces?
+*** Larry Hughes 
+  :PROPERTIES:
+  :BEAMER_env: definition
+  :END:
+System administrator for the Department of Computer Science.
+
+*** Questions for above people:
+  :PROPERTIES:
+  :BEAMER_env: definition
+  :END:
+- What Intrustion Detection Systems do you use?
+- What are your experiences with IDS?
+- What are the most common attacks the University of Idaho faces?
 
 ** Free IDS Tools (and detail about how they work)
 
-- [[http://www.snort.org][Snort]]
+*** [[http://www.snort.org][Snort]]
+  :PROPERTIES:
+  :BEAMER_env: definition
+  :END:
+"Snort's open source network-based intrusion detection system (NIDS)
+has the ability to perform real-time traffic analysis and packet
+logging on Internet Protocol (IP) networks. Snort performs protocol
+analysis, content searching, and content matching."
 
-  - "Snort's open source network-based intrusion detection system
-    (NIDS) has the ability to perform real-time traffic analysis and
-    packet logging on Internet Protocol (IP) networks. Snort performs
-    protocol analysis, content searching, and content matching."
+*** [[http://aide.sourceforge.net][AIDE]]
+  :PROPERTIES:
+  :BEAMER_env: definition
+  :END:
+"AIDE (Advanced Intrusion Detection Environment) is a file and
+directory integrity checker."
 
-- [[http://aide.sourceforge.net][AIDE]]
-
-  - "AIDE (Advanced Intrusion Detection Environment) is a file and
-    directory integrity checker."
-
-- [[https://www.prelude-ids.org][Prelude-IDS]]
-
-  - "Prelude collects, normalizes, sorts, aggregates, correlates and
-    reports all security-related events independently of the product
-    brand or license giving rise to such events."
+*** [[https://www.prelude-ids.org][Prelude-IDS]]
+  :PROPERTIES:
+  :BEAMER_env: definition
+  :END:
+"Prelude collects, normalizes, sorts, aggregates, correlates and
+reports all security-related events independently of the product brand
+or license giving rise to such events."
 
 ** Slideshow
 Slideshow created with LaTeX Beamer package, exported from Emacs org-mode.
@@ -261,23 +286,24 @@ Slideshow created with LaTeX Beamer package, exported from Emacs org-mode.
 * Summary
 ** Summary
 - Why IDS?  
-  Computer systems and networks are vulnerable to
-  unauthorized access and malicious activity so administrators must
-  implement accounting techniques to record potential violations.
+  - Computer systems and networks are vulnerable to unauthorized
+    access and malicious activity so administrators must implement
+    accounting techniques to record potential violations.
  
 - An IDS is: 
-  A set of techniques using a combination of software,
-  hardware, and administrative policies in order to monitor a computer
-  system or network of systems for policy violations, unauthorized
-  access, or malicious activity.
+  - A set of techniques using a combination of software, hardware, and
+    administrative policies in order to monitor a computer system or
+    network of systems for policy violations, unauthorized access, or
+    malicious activity.
 
 - Signature-based IDS:
-   This type of IDS checks packets traveling across a network against a
-   known set of patterns recognized as likely attacks.
+  - This type of IDS checks packets traveling across a network
+    against a known set of patterns recognized as likely attacks.
 
 - Statistical anomaly-based IDS:
-   This type of IDS alerts when an abnormal event takes place on a
-   network, such as a spike of traffic to a particular server or region.
+  - This type of IDS alerts when an abnormal event takes place on a
+    network, such as a spike of traffic to a particular server or
+    region.
 
 \note{The intent of an IDS is to produce a report for
 administrators of detected policy violations, which may or may not
@@ -287,20 +313,41 @@ System. The latter attempts to be reactive, by for example, blocking a
 detected intruder's IP address from connecting).}
 
 * Questions
-** What is an Intrusion Detection System?
-Refer to proposed solution
-** Why do we need Intrusion Detection Systems?
-Refer to problem
-** What are the two types of IDS monitoring?
-*** Signature-based IDS
-*** Statistical anomaly-based IDS
-** Where do IDSs fall short?
-1. Does not react to attacks
-2. Very high rate of false-alarms leads to high noise making the detection of legimate intrusions more difficult
-3. Intruders could hide by editing the IDS logs
-4. Etc.
-** What is the reactive counterpart to IDS?
-An Intrusion Prevention System is the reactive complement to an IDS.
+** Questions
+1. Why do we need Intrusion Detection Systems?
+
+2. What is an Intrusion Detection System?
+
+3. What are the two types of IDS monitoring?
+
+4. Where do IDSs fall short?
+
+5. What is the reactive counterpart to IDS?
+
+** Answers
+1. Why do we need Intrusion Detection Systems?
+   - Computer systems and networks are vulnerable to unauthorized
+     access and malicious activity so administrators must implement
+     accounting techniques to record potential violations.
+
+2. What is an Intrusion Detection System?
+   - A set of techniques using a combination of software, hardware,
+     and administrative policies in order to monitor a computer system
+     or network of systems for policy violations, unauthorized access,
+     or malicious activity.
+
+3. What are the two types of IDS monitoring?
+   - Signature-based IDS
+   - Statistical anomaly-based IDS
+
+4. Where do IDSs fall short?
+   1. Does not react to attacks
+   2. Very high rate of false-alarms leads to high noise making the detection of legimate intrusions more difficult
+   3. Intruders could hide by editing the IDS logs
+   4. Etc.
+
+5. What is the reactive counterpart to IDS?
+   - An Intrusion Prevention System is the reactive complement to an IDS.
 * References
 ** References
 - beetle & sashsa. "A Strict Anomaly Detection Model for IDS." Phrack
