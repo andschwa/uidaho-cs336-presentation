@@ -77,19 +77,28 @@ presentation. This is a GROUP assignment.
 
 Your document should detail all the following information:
 
-1. Title (1 slide). Include title, presenters' names, and place.  
-2. Overview (1 slide). Show us the structure of your presentation. 
-3. Problem (1 slide): Describe the problem you are investigating. 
-4. Potential Solutions.
-5. Presented Solution Introduction.
-6. Resources Used.
-7. Summary (1 slide).
-8. Questions (1 slide).
+** DONE Title (1 slide). Include title, presenters' names, and place.
+
+** DONE Overview (1 slide). Show us the structure of your presentation.
+
+** DONE Problem (1 slide): Describe the problem you are investigating.
+
+** TODO Potential Solutions.
+
+** DONE Presented Solution Introduction.
+
+** DONE Resources Used.
+
+** DONE Summary (1 slide).
+
+** DONE Questions (1 slide).
 
 Present 5 Quickly answerable questions. Your audience would be able to
 answer all these in 5 minutes.
 
-9. References.
+** TODO References.
+
+** TODO Notes/comments for each section
 
 Please submit a PDF with one slide per page (top of the page) and your
 comments and notes in the same page.
@@ -112,26 +121,73 @@ comments and notes in the same page.
 - System and network administrators must implement accounting
   techniques which record possible violations for further review.
 
-\note{Sample notes}
+\note{IDSs fill the gap that exists between the preventative safety
+measures that administrators setup to protect their systems against
+known attacks, and attacks that are nevertheless successfull. An IDS
+is like a security camera in a bank vault: if the system was perfect
+they would be superfluous, but with the admission that there will be
+faults in a system's security, the IDS records what policy violations,
+which may catch possible intrusion attempts, in addition to any damage
+that may have been done, so that the violations can be reviewed, the
+damage can be addressed, and administrators can put into effect
+regressive security measures.}
 
 * Potential Solutions
 * Proposed Solution
 ** Intrusion Detection Systems (IDS) for System and Network Accountability
 - An IDS is a set of techniques using a combination of software,
   hardware, and administrative policies in order to monitor a computer
-  system or network of systems for unauthorized access or malicious
-  activity.
+  system or network of systems for policy violations, unauthorized
+  access, or malicious activity.
 
 - This monitoring is perodically transformed into a report for further
   review by the system's administrators.
+
+\note{Note that an IDS cannot by itself see the difference between an
+innocent and malicious policy violation, so in actuality all it does
+is record policy violations. These policy violations may or may not
+correspond to an attack. An IDS is necessitated because most computer
+security issues are caused by insiders; that is, users who
+purposefully have significant privleges within a system (in order to
+do their work), which would obviously not be blocked by a
+firewall. The majority of harm these insiders do is unintentional, yet
+are still recorded as policy violations [Pfleeger s7.5]. It is up to
+the system administrators' periodic review of the IDS reports to sift
+through the recorded violations and determine which were malicious,
+which were honest mistakes, and which were false alarms.}
 
 ** Signature-based IDS
 This type of IDS checks packets traveling across a network against a
 known set of patterns recognized as likely attacks.
 
+\note{This is similar to a virus scanner checking files against a
+database of known malicious code signatures. Types of "attacks" caught
+by this system include: port scans, malformed packets (illegal TCP
+flag combinations, wrong sizes, etc.), connection attempts from
+reserved IP addresses (indicating the real source was masked), e-mail
+containing viruses, exploit shellcode sequences in packets (Domain
+Name Service / Network Interface Card buffer overflow), flood of
+packets (Denial Of Service), etc. [Frederick]. The major problem is
+that attackers are well-aware of this type of checking, and can
+(easily) alter their attack in such a way as to change its
+signature. This requires a SBIDS to maintain a frequently updated
+database, and slows down the IDS's ability to check against said
+database as its size grows. An SBIDS is also useless against new
+(zero-day) exploits.}
+
 ** Statistical anomaly-based IDS
 This type of IDS alerts when an abnormal event takes place on a
 network, such as a spike of traffic to a particular server or region.
+
+\note{Also known as heuristic IDS. These generally compare current
+activity against a known safe "baseline", which is a set of patterns
+of normal activity for a certain system. This can lead to many false
+positives, but can also catch attacks that would otherwise not be
+recorded by an SBIDS. This type of system uses an "inference engine",
+which follow two patterns: state-based, where the IDS attempts to
+detect when the system has entered an unsafe state; and model-based,
+where the IDS maps current activity onto a model of unacceptable
+activity, and alarms when they match [Pfleeger s7.5].}
 
 * Resources
 ** Articles
@@ -201,28 +257,31 @@ Refer to problem
 ** What is the reactive counterpart to IDS?
 An Intrusion Prevention System is the reactive complement to an IDS.
 * References
+** References
+- beetle & sashsa. "A Strict Anomaly Detection Model for IDS." Phrack
+  Magazine, Volume A, No. 38 (2000). 
+  http://www.phrack.org/issues.html?issue=56&id=11&mode=txt
+
+- Frederick, Karen. "Network Intrusion Detection Signatures, Part
+  One". 2010. http://www.symantec.com/connect/articles/network-intrusion-detection-signatures-part-one
+
+- Mell, Peter. "Understanding Intrusion Detection Systems." EDPACS
+  Newsletter, Vol. 29, No. 5 (2001). 
+  http://trygstad.rice.iit.edu:8000/Articles/UnderstandingIDS-EDPAC.pdf
 
 - Pfleeger, Charles P., Pfleeger, Shari Lawrence. 2007. Security in
   Computing. (4th. ed.). Person Education, Boston, MA.
+
+- SANS Institue InfoSec Reading Room. "Understanding Intrusion
+  Detection Systems." 2001.
+  https://www.sans.org/reading-room/whitepapers/detection/understanding-intrusion-detection-systems-337
+
+- Scarfone, Karen. Mell, Peter. "Guide to Intrusion and Prevention
+  Systems (IDPS)." Retreieved November 21, 2013 from
+  http://csrc.nist.gov/publications/nistpubs/800-94/SP800-94.pdf
 
 - WikiPedia Contributors, 'Intrusion detection system', Wikipedia, The
   Free Encyclopedia, 22 July 2004, 10:55 UTC,
   <http://en.wikipedia.org/wiki/Intrusion_detection_systems> [accessed
   21 November 2013]
 
-- Scarfone, Karen. Mell, Peter. "Guide to Intrusion and Prevention
-  Systems (IDPS)." Retreieved November 21, 2013 from
-  http://csrc.nist.gov/publications/nistpubs/800-94/SP800-94.pdf
-
-
-- Mell, Peter. "Understanding Intrusion Detection Systems." EDPACS
-  Newsletter, Vol. 29, No. 5 (2001). 
-  http://trygstad.rice.iit.edu:8000/Articles/UnderstandingIDS-EDPAC.pdf
-
-- beetle & sashsa. "A Strict Anomaly Detection Model for IDS." Phrack
-  Magazine, Volume A, No. 38 (2000). 
-  http://www.phrack.org/issues.html?issue=56&id=11&mode=txt
-
-- SANS Institue InfoSec Reading Room. "Understanding Intrusion
-  Detection Systems." 2001.
-  https://www.sans.org/reading-room/whitepapers/detection/understanding-intrusion-detection-systems-337
