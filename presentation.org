@@ -147,9 +147,10 @@ regressive security measures.}
 \note{IPS differs from stand-alone IDS in that it may take actions
 such as sending an alarm, dropping malicious packets, resetting a
 connection and/or blocking traffic from an offending IP
-address. Because an IPS acts independently of a system or network admin,
-it often casues more trouble than it's worth by denying legitimate
-users service unjustly or rasing excessive false alarms.}
+address. Because an IPS acts independently of a system or network
+admin, it often casues more trouble than it's worth by denying
+legitimate users service unjustly or rasing excessive false
+alarms. ("Intrusion prevention system," 2013)}
 
 * Proposed Solution
 ** Intrusion Detection Systems (IDS) for System and Network Accountability
@@ -326,5 +327,10 @@ An Intrusion Prevention System is the reactive complement to an IDS.
 - WikiPedia Contributors, 'Intrusion detection system', Wikipedia, The
   Free Encyclopedia, 22 July 2004, 10:55 UTC,
   <http://en.wikipedia.org/wiki/Intrusion_detection_systems> [accessed
+  21 November 2013]
+
+- WikiPedia Contributors, 'Intrusion prevention system', Wikipedia, The
+  Free Encyclopedia, 22 July 2004, 10:55 UTC,
+  <http://en.wikipedia.org/wiki/Intrusion_prevention_system> [accessed
   21 November 2013]
 
