@@ -107,7 +107,7 @@ answer all these in 5 minutes.
 Please submit a PDF with one slide per page (top of the page) and your
 comments and notes in the same page.
 
-** TODO Fix Definition () thing
+** DONE Fix Definition () thing
 ** TODO Finalize formatting
 
 * Introduction
@@ -143,13 +143,13 @@ regressive security measures.}
 
 *** Intrusion Detection Systems
   :PROPERTIES:
-  :BEAMER_env: definition
+  :BEAMER_env: block
   :END:
 Identify, log and report suspicious activity. 
 
 *** Intrusion Prevention Systems
   :PROPERTIES:
-  :BEAMER_env: definition
+  :BEAMER_env: block
   :END:
 Identify, log, report AND attempt to block or stop the suspicious
 activity.
@@ -235,20 +235,20 @@ activity, and alarms when they match [Pfleeger s7.5].}
 
 *** Mitch Parks
   :PROPERTIES:
-  :BEAMER_env: definition
+  :BEAMER_env: block
   :END:
 Specializes in desktop security and manages many of ITS's security
 measures.
 
 *** Larry Hughes 
   :PROPERTIES:
-  :BEAMER_env: definition
+  :BEAMER_env: block
   :END:
 System administrator for the Department of Computer Science.
 
 *** Questions for above people:
   :PROPERTIES:
-  :BEAMER_env: definition
+  :BEAMER_env: block
   :END:
 - What Intrustion Detection Systems do you use?
 - What are your experiences with IDS?
@@ -258,7 +258,7 @@ System administrator for the Department of Computer Science.
 
 *** [[http://www.snort.org][Snort]]
   :PROPERTIES:
-  :BEAMER_env: definition
+  :BEAMER_env: block
   :END:
 "Snort's open source network-based intrusion detection system (NIDS)
 has the ability to perform real-time traffic analysis and packet
@@ -267,14 +267,14 @@ analysis, content searching, and content matching."
 
 *** [[http://aide.sourceforge.net][AIDE]]
   :PROPERTIES:
-  :BEAMER_env: definition
+  :BEAMER_env: block
   :END:
 "AIDE (Advanced Intrusion Detection Environment) is a file and
 directory integrity checker."
 
 *** [[https://www.prelude-ids.org][Prelude-IDS]]
   :PROPERTIES:
-  :BEAMER_env: definition
+  :BEAMER_env: block
   :END:
 "Prelude collects, normalizes, sorts, aggregates, correlates and
 reports all security-related events independently of the product brand
