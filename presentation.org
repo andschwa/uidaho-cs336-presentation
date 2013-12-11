@@ -138,6 +138,40 @@ that may have been done, so that the violations can be reviewed, the
 damage can be addressed, and administrators can put into effect
 regressive security measures.}
 
+* History
+** Timeline
+\vspace*{\fill}
+- 1980: James Anderson writes technical report "\textbf{Computer Security
+        Threat Monitoring and Surveillance}."\\
+
+- 1985: Stanford Reasearch Insitute(SRI) builds inital prototype of
+        Intrusion Detection Expert System, \textbf{IDES}.\\
+
+- 1987: \textbf{First Annual Intrusion Detection Workshop} at SRI.\\
+
+
+- 1989: Beginnings of newtork intrusion detection field. Todd Herberlien
+      writes the Network Security Monitor(\textbf{NSM}) to capture TCP/IP
+      packets.\\
+
+\vspace*{\fill}
+\newpage
+\vspace*{\fill}
+
+- 1997: Network intrusion detection system, \textbf{Realsecure}, is built for
+      Windows NT.\\
+
+- 1998: \textbf{APE/Snort} is developed as a an IDS packet sniffer.\\
+
+- 1999: Federal Intrusion Detection Network(\textbf{FIDNet}) is created. \\
+
+\vspace*{\fill}
+
+** Early Systems
+- MIDAS: Multics INtrusion Detection and Alerting System.
+- PDAT: Protocol Data Analysis Tool.
+- IDES:
+
 * Potential Solutions
 ** Potential Solutions
 
