@@ -138,16 +138,15 @@ that may have been done, so that the violations can be reviewed, the
 damage can be addressed, and administrators can put into effect
 regressive security measures.}
 
-* Potential Solutions :Shea:
+* Potential Solutions :Both:
 ** Potential Solutions
-
-*** Intrusion Detection Systems
+*** Intrusion Detection Systems :Shea:  
   :PROPERTIES:
   :BEAMER_env: block
   :END:
 Identify, log and report suspicious activity. 
 
-*** Intrusion Prevention Systems
+*** Intrusion Prevention Systems :Andy:
   :PROPERTIES:
   :BEAMER_env: block
   :END:
@@ -162,8 +161,67 @@ admin, it often casues more trouble than it's worth by denying
 legitimate users service unjustly or rasing excessive false
 alarms. ("Intrusion prevention system," 2013)}
 
-* History :Shea:
-** Timeline
+* Proposed Solution :Both:
+** Intrusion Detection Systems (IDS) for System and Network Accountability :Shea:
+- An IDS is a set of techniques using a combination of software,
+  hardware, and administrative policies in order to monitor a computer
+  system or network of systems for policy violations, unauthorized
+  access, or malicious activity.
+
+- This monitoring is perodically transformed into a report for further
+  review by the system's administrators.
+
+\note{Note that an IDS cannot by itself see the difference between an
+innocent and malicious policy violation, so in actuality all it does
+is record policy violations. These policy violations may or may not
+correspond to an attack. An IDS is necessitated because most computer
+security issues are caused by insiders; that is, users who
+purposefully have significant privleges within a system (in order to
+do their work), which would obviously not be blocked by a
+firewall. The majority of harm these insiders do is unintentional, yet
+are still recorded as policy violations [Pfleeger s7.5]. It is up to
+the system administrators' periodic review of the IDS reports to sift
+through the recorded violations and determine which were malicious,
+which were honest mistakes, and which were false alarms.}
+
+*** Signature-based IDS
+This type of IDS checks packets traveling across a network against a
+known set of patterns recognized as likely attacks.
+
+\note{This is similar to a virus scanner checking files against a
+database of known malicious code signatures. Types of "attacks" caught
+by this system include: port scans, malformed packets (illegal TCP
+flag combinations, wrong sizes, etc.), connection attempts from
+reserved IP addresses (indicating the real source was masked), e-mail
+containing viruses, exploit shellcode sequences in packets (Domain
+Name Service / Network Interface Card buffer overflow), flood of
+packets (Denial Of Service), etc. [Frederick].
+
+The major problem is that attackers are well-aware of this type of
+checking, and can (easily) alter their attack in such a way as to
+change its signature. This requires a SBIDS to maintain a frequently
+updated database, and slows down the IDS's ability to check against
+said database as its size grows. An SBIDS is also useless against new
+(zero-day) exploits.}
+
+*** Statistical anomaly-based IDS
+This type of IDS alerts when an abnormal event takes place on a
+network, such as a spike of traffic to a particular server or region.
+
+\note{Also known as heuristic IDS. These generally compare current
+activity against a known safe "baseline", which is a set of patterns
+of normal activity for a certain system. This can lead to many false
+positives, but can also catch attacks that would otherwise not be
+recorded by an SBIDS. This type of system uses an "inference engine",
+which follow two patterns: state-based, where the IDS attempts to
+detect when the system has entered an unsafe state; and model-based,
+where the IDS maps current activity onto a model of unacceptable
+activity, and alarms when they match [Pfleeger s7.5].}
+
+*** Host Based
+*** Network Based
+** History :Shea:
+*** Timeline
 \vspace*{\fill}
 - 1980: James Anderson writes technical report "\textbf{Computer Security
         Threat Monitoring and Surveillance}."\\
@@ -191,69 +249,14 @@ alarms. ("Intrusion prevention system," 2013)}
 
 \vspace*{\fill}
 
-** Early Systems
+*** Early Systems
 - MIDAS: Multics INtrusion Detection and Alerting System.
 - PDAT: Protocol Data Analysis Tool.
 - IDES:
 
-* Proposed Solution :Andy:
-** Intrusion Detection Systems (IDS) for System and Network Accountability
-- An IDS is a set of techniques using a combination of software,
-  hardware, and administrative policies in order to monitor a computer
-  system or network of systems for policy violations, unauthorized
-  access, or malicious activity.
-
-- This monitoring is perodically transformed into a report for further
-  review by the system's administrators.
-
-\note{Note that an IDS cannot by itself see the difference between an
-innocent and malicious policy violation, so in actuality all it does
-is record policy violations. These policy violations may or may not
-correspond to an attack. An IDS is necessitated because most computer
-security issues are caused by insiders; that is, users who
-purposefully have significant privleges within a system (in order to
-do their work), which would obviously not be blocked by a
-firewall. The majority of harm these insiders do is unintentional, yet
-are still recorded as policy violations [Pfleeger s7.5]. It is up to
-the system administrators' periodic review of the IDS reports to sift
-through the recorded violations and determine which were malicious,
-which were honest mistakes, and which were false alarms.}
-
-** Signature-based IDS
-This type of IDS checks packets traveling across a network against a
-known set of patterns recognized as likely attacks.
-
-\note{This is similar to a virus scanner checking files against a
-database of known malicious code signatures. Types of "attacks" caught
-by this system include: port scans, malformed packets (illegal TCP
-flag combinations, wrong sizes, etc.), connection attempts from
-reserved IP addresses (indicating the real source was masked), e-mail
-containing viruses, exploit shellcode sequences in packets (Domain
-Name Service / Network Interface Card buffer overflow), flood of
-packets (Denial Of Service), etc. [Frederick].
-
-The major problem is that attackers are well-aware of this type of
-checking, and can (easily) alter their attack in such a way as to
-change its signature. This requires a SBIDS to maintain a frequently
-updated database, and slows down the IDS's ability to check against
-said database as its size grows. An SBIDS is also useless against new
-(zero-day) exploits.}
-
-** Statistical anomaly-based IDS
-This type of IDS alerts when an abnormal event takes place on a
-network, such as a spike of traffic to a particular server or region.
-
-\note{Also known as heuristic IDS. These generally compare current
-activity against a known safe "baseline", which is a set of patterns
-of normal activity for a certain system. This can lead to many false
-positives, but can also catch attacks that would otherwise not be
-recorded by an SBIDS. This type of system uses an "inference engine",
-which follow two patterns: state-based, where the IDS attempts to
-detect when the system has entered an unsafe state; and model-based,
-where the IDS maps current activity onto a model of unacceptable
-activity, and alarms when they match [Pfleeger s7.5].}
-
-** Free IDS Tools (and detail about how they work)
+** State of IDS today :Andy:
+** Direction of IDS :Andy:
+** Free IDS Tools (and detail about how they work) :Andy:
 
 *** [[http://www.snort.org][Snort]]
   :PROPERTIES:
@@ -277,10 +280,9 @@ directory integrity checker."
   :END:
 "Prelude collects, normalizes, sorts, aggregates, correlates and
 reports all security-related events independently of the product brand
-or license giving rise to such events."
+or license giving rise to such event
+** IDS Demo :Andy:
 
-
-* Demo
 * Resources :noexport:
 ** Articles
 - [[http://en.wikipedia.org/wiki/Intrusion_detection_systems][WikiPedia's Article on Intrusion Detection Systems]]
