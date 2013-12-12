@@ -204,7 +204,7 @@ intrusion detection systems.
 
 Some define misuse as derivations from rigid definitions of
 "acceptable behavior," others by detecting patterns or "signatures" of
-known threats.[1]
+known threats.(1)
 
 ** Anomaly Detection
 - What does an anomaly look like?
@@ -232,7 +232,7 @@ which were honest mistakes, and which were false alarms.}
 An IDS is \textbf{Host-Based} when data analyzed comes from computer
 activity, i.e. processing information from event logs for
 applications, operating systems, file systems, and individual network
-interfaces.[1]
+interfaces.(1)
 
 \vspace*{\fill}
 \newpage
@@ -374,7 +374,7 @@ activity, and alarms when they match [Pfleeger s7.5].}
 
 ** History :Shea:
 \vspace*{\fill}
-*** Timeline[1]
+*** Timeline(1)
 
 - 1980: James Anderson writes technical report "\textbf{Computer Security
         Threat Monitoring and Surveillance}."\\
@@ -393,7 +393,6 @@ activity, and alarms when they match [Pfleeger s7.5].}
 
 \newpage
 
-*** Modern IDS
 ** Free IDS Tools (and detail about how they work) :Andy:
 
 *** [[http://www.snort.org][Snort]]
@@ -524,34 +523,38 @@ detected intruder's IP address from connecting).}
    - An Intrusion Prevention System is the reactive complement to an IDS.
 * References
 ** References
-- beetle & sashsa. "A Strict Anomaly Detection Model for IDS." Phrack
+
+1) Proctor, Paul E. 2001. The Practical Intrusion Detection
+  Handbook. Prentice Hall, Upper Saddle River, NJ.
+
+2) beetle & sashsa. "A Strict Anomaly Detection Model for IDS." Phrack
   Magazine, Volume A, No. 38 (2000). 
   http://www.phrack.org/issues.html?issue=56&id=11&mode=txt
 
-- Frederick, Karen. "Network Intrusion Detection Signatures, Part
+3) Frederick, Karen. "Network Intrusion Detection Signatures, Part
   One". 2010. http://www.symantec.com/connect/articles/network-intrusion-detection-signatures-part-one
 
-- Mell, Peter. "Understanding Intrusion Detection Systems." EDPACS
+4) Mell, Peter. "Understanding Intrusion Detection Systems." EDPACS
   Newsletter, Vol. 29, No. 5 (2001). 
   http://trygstad.rice.iit.edu:8000/Articles/UnderstandingIDS-EDPAC.pdf
 
-- Pfleeger, Charles P., Pfleeger, Shari Lawrence. 2007. Security in
+5) Pfleeger, Charles P., Pfleeger, Shari Lawrence. 2007. Security in
   Computing. (4th. ed.). Person Education, Boston, MA.
 
-- SANS Institue InfoSec Reading Room. "Understanding Intrusion
+6) SANS Institue InfoSec Reading Room. "Understanding Intrusion
   Detection Systems." 2001.
   https://www.sans.org/reading-room/whitepapers/detection/understanding-intrusion-detection-systems-337
 
-- Scarfone, Karen. Mell, Peter. "Guide to Intrusion and Prevention
+7) Scarfone, Karen. Mell, Peter. "Guide to Intrusion and Prevention
   Systems (IDPS)." Retreieved November 21, 2013 from
   http://csrc.nist.gov/publications/nistpubs/800-94/SP800-94.pdf
 
-- WikiPedia Contributors, 'Intrusion detection system', Wikipedia, The
+8) WikiPedia Contributors, 'Intrusion detection system', Wikipedia, The
   Free Encyclopedia, 22 July 2004, 10:55 UTC,
   <http://en.wikipedia.org/wiki/Intrusion_detection_systems> [accessed
   21 November 2013]
 
-- WikiPedia Contributors, 'Intrusion prevention system', Wikipedia, The
+9) WikiPedia Contributors, 'Intrusion prevention system', Wikipedia, The
   Free Encyclopedia, 22 July 2004, 10:55 UTC,
   <http://en.wikipedia.org/wiki/Intrusion_prevention_system> [accessed
   21 November 2013]
