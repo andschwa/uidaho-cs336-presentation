@@ -209,7 +209,7 @@ intrusion detection systems.
 
 Some IDS defines misuse as derviations from rigid definitions of
 "acceptable behavior," others by detecting patterns or "signatures" of
-known threats.
+known threats.[1]
 
 ** Anomaly Detection
 - What does an anomaly look like?
@@ -230,23 +230,24 @@ known threats.
 # through the recorded violations and determine which were malicious,
 # which were honest mistakes, and which were false alarms.}
 
-
 ** Host-Based Intrusion Detection Systems
-
+   
 \vspace*{\fill}
 
 An IDS is \textbf{Host-Based} when data analyzed comes from computer
 activity, i.e. processing info from event logs for applications and
-operating systems.
+operating systems.[1]
 
 \vspace*{\fill}
 \newpage
 \vspace*{\fill}
 
-Host-Based IDS confronts the "insider threat." 
+Host-Based IDS confronts the "insider threat."
+\newline \newline 
 Potential Insiders:
 - Back-Door admin accounts
 - Active ex-employee accounts
+- Standard users with inadvertantly elevated privledges.
 Potential Threats:
 - Trade Secret Read/Write
 - Data Falsification
@@ -374,8 +375,8 @@ activity, and alarms when they match [Pfleeger s7.5].}
 # *** Network Based
 
 ** History :Shea:
-*** Timeline
 \vspace*{\fill}
+*** Timeline[1]
 
 - 1980: James Anderson writes technical report "\textbf{Computer Security
         Threat Monitoring and Surveillance}."\\
@@ -383,30 +384,17 @@ activity, and alarms when they match [Pfleeger s7.5].}
 - 1985: Stanford Reasearch Insitute(SRI) builds inital prototype of
         Intrusion Detection Expert System, \textbf{IDES}.\\
 
-- 1987: \textbf{First Annual Intrusion Detection Workshop} at SRI.\\
-
-
 - 1989: Beginnings of network intrusion detection field. Todd Herberlien
-      writes the Network Security Monitor(\textbf{NSM}) to capture TCP/IP
-      packets.\\
-
-\vspace*{\fill}
-\newpage
-\vspace*{\fill}
+        writes the Network Security Monitor(\textbf{NSM}) to capture TCP/IP
+        packets.\\
 
 - 1997: Network intrusion detection system, \textbf{Realsecure}, is built for
-      Windows NT.\\
+        Windows NT.\\
 
-- 1998: \textbf{APE/Snort} is developed as a an IDS packet sniffer.\\
+\vspace*{\fill}
 
-- 1999: Federal Intrusion Detection Network(\textbf{FIDNet}) is created. \\
+\newpage
 
-
-
-*** Early Systems
-- MIDAS: Multics Intrusion Detection and Alerting System.
-- PDAT: Protocol Data Analysis Tool.
-- IDES: 
 
 ** State of IDS today :Andy:
 ** Direction of IDS :Andy:
@@ -505,31 +493,30 @@ detected intruder's IP address from connecting).}
 
 * Questions
 ** Questions
-1. Why do we need Intrusion Detection Systems?
+1. How does an IDS complement security conrols such as anti-malware or
+   access control tools?
 
-2. What is an Intrusion Detection System?
+2. What two IDS paradigms did we discuss today?
 
-3. What are the two types of IDS monitoring?
+3. What's an example of an "insider threat?"
 
 4. Where do IDSs fall short?
 
 5. What is the reactive counterpart to IDS?
 
 ** Answers
-1. Why do we need Intrusion Detection Systems?
-   - Computer systems and networks are vulnerable to unauthorized
-     access and malicious activity so administrators must implement
-     accounting techniques to record potential violations.
 
-2. What is an Intrusion Detection System?
-   - A set of techniques using a combination of software, hardware,
-     and administrative policies in order to monitor a computer system
-     or network of systems for policy violations, unauthorized access,
-     or malicious activity.
+1. How does an IDS complement security conrols such as anti-malware or
+   access control tools?
+   - It allows us to verify that they are working or provide eveidence that they are not.
 
-3. What are the two types of IDS monitoring?
-   - Signature-based IDS
-   - Statistical anomaly-based IDS
+2. What two IDS paradigms did we discuss today?
+   - Host-Based IDS
+   - Newtork-Based IDS
+
+3. What's an example of an "insider threat?"
+   - Disgruntled Employee
+   - User with inadvertant elevated privladges.
 
 4. Where do IDSs fall short?
    1. Does not react to attacks
