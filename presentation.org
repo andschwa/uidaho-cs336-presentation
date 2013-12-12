@@ -196,12 +196,15 @@ intrusion detection systems.
   - Anomaly Detection
     
 ** Misuse Detection
+\vspace*{\fill}
+
 - What does "misuse" look like?
   - Policy violations?
   - Unauthorized Read?
   - Unauthorized Write?
   - Denial of Service?
 
+\vspace*{\fill}
 \newpage
 
 Some IDS defines misuse as derviations from rigid definitions of
@@ -331,7 +334,7 @@ Signatures can be found in a packet's content or in a packet's header.
 \textbf{Example: 336-FinalExam.tex is defined as a critical
 document. A network-based IDS may be directed to look for the pattern
 "FinalExam" in a packets contents so the act of copying
-"336-FinalExam.tex" over a FTP session.}
+"336-FinalExam.tex" over a FTP session would be logged.}
 
 
 ** Not in Use :noexport:
