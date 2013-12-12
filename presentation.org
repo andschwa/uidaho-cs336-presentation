@@ -202,9 +202,9 @@ intrusion detection systems.
 \vspace*{\fill}
 \newpage
 
-Some define misuse as derivations from rigid definitions of
-"acceptable behavior," others by detecting patterns or "signatures" of
-known threats.(1)
+Paul Proctor defines misuse as both derivations from rigid definitions
+of "acceptable behavior," and as detection of patterns or "signatures"
+of known threats.
 
 ** Anomaly Detection
 - What does an anomaly look like?
@@ -229,10 +229,10 @@ which were honest mistakes, and which were false alarms.}
 
 \vspace*{\fill}
 
-An IDS is \textbf{Host-Based} when data analyzed comes from computer
-activity, i.e. processing information from event logs for
-applications, operating systems, file systems, and individual network
-interfaces.(1)
+Proctor defines a \textbf{Host-Based} IDS as one which analyzes data
+coming from computer activity, i.e. processing information from event
+logs for applications, operating systems, file systems, and individual
+network interfaces.
 
 \vspace*{\fill}
 \newpage
@@ -328,7 +328,7 @@ Potential Threats:
 
 Signatures can be found in a packet's content or in a packet's
 header. These signatures are composed of both those from a common
-database, and from administrator defined patterns.
+database of known attacks, and from administrator defined patterns.
 
 \newline \newline
 
@@ -373,7 +373,7 @@ where the IDS maps current activity onto a model of unacceptable
 activity, and alarms when they match [Pfleeger s7.5].}
 
 ** History :Shea:
-*** Time-line(1)
+*** Time-line (as given by Proctor)
 
 - 1980: James Anderson writes technical report "\textbf{Computer Security
         Threat Monitoring and Surveillance}."\\
@@ -390,7 +390,7 @@ activity, and alarms when they match [Pfleeger s7.5].}
 
 \vspace*{\fill}
 
-** Free IDS Tools (and detail about how they work) :Andy:
+** Open-Source IDS Tools (and detail about how they work) :Andy:
 
 *** [[http://www.snort.org][Snort]]
   :PROPERTIES:
@@ -414,7 +414,7 @@ directory integrity checker."
   :END:
 "Prelude collects, normalizes, sorts, aggregates, correlates and
 reports all security-related events independently of the product brand
-or license giving rise to such event
+or license giving rise to such event"
    
 * Resources :noexport:
 ** Articles
