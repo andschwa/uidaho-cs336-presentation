@@ -298,8 +298,43 @@ Potential Threats:
 *Example Pattern: Object "336-FinalExam.tex" accessed for read/write by user thom5468.*
 
 ** Network-Based Intrusion Detection Systems
+\vspace*{\fill}
+
+- An IDS is \textbf{Network-Based} when it is used to analyze network
+  packets. 
+
+- These packets can be "sniffed" (analyzed) by intercepting network
+  traffic, commonly TCP/IP, or they can be gathered from router or
+  switch output. 
+
+\vspace*{\fill}
+\newpage
+\vspace*{\fill}
+
+Network-Based IDS confronts the "outsider threat." 
+
+Potential Threats:
+ - Denial of service (DOS)
+   - Malformed Packets
+   - Packet Flooding
+   - Distributed DOS
+- Password Downloads
+- Data Theft
+- Unauthorized Access**
+
+\vspace*{\fill}
 
 ** Network-Based Operation
+
+Signatures can be found in a packet's content or in a packet's header.
+\newline \newline
+\textbf{Example: 336-FinalExam.tex is defined as a critical
+document. A network-based IDS may be directed to look for the pattern
+"FinalExam" in a packets contents so the act of copying
+"336-FinalExam.tex" over a FTP session.}
+
+
+** Not in Use :noexport:
 # *** Signature-based IDS
 This type of IDS checks packets traveling across a network against a
 known set of patterns recognized as likely attacks.
