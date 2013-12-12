@@ -18,7 +18,7 @@
 #+LaTeX_CLASS_OPTIONS: [presentation, smaller]
 #+BEAMER_FRAME_LEVEL: 2
 #+LaTeX_HEADER: \usetheme{PaloAlto}
-#+LaTeX_HEADER: \setbeameroption{show notes}
+#+LaTeX_HEADER: \setbeameroption{hide notes}
 #+LaTeX_HEADER: \let\oldframe\frame
 #+LaTeX_HEADER: \renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
 
@@ -156,8 +156,8 @@ predefined patterns of misuse.
   :PROPERTIES:
   :BEAMER_env: block
   :END:
-Identify, log, report BUT ALSO automatically attempt to block or stop
-the suspicious activity.
+Identify, log, report \textbf{but also} automatically attempt to block
+or stop the suspicious activity.
 
 \note{IPS differs from stand-alone IDS in that it may take actions
 such as sending an alarm, dropping malicious packets, resetting a
@@ -517,7 +517,6 @@ detected intruder's IP address from connecting).}
    1. Does not react to attacks
    2. Very high rate of false-alarms leads to high noise making the detection of legimate intrusions more difficult
    3. Intruders could hide by editing the IDS logs
-   4. Etc.
 
 5. What is the reactive counterpart to IDS?
    - An Intrusion Prevention System is the reactive complement to an IDS.
