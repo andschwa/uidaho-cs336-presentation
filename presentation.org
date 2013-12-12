@@ -457,24 +457,21 @@ Slideshow created with LaTeX Beamer package, exported from Emacs org-mode.
 * Summary
 ** Summary
 - Why IDS?  
-  - Computer systems and networks are vulnerable to unauthorized
-    access and malicious activity so administrators must implement
-    accounting techniques to record potential violations.
+  - We need to be able to \textbf{verify} that the controls and
+    safeguards we put in place actually work and understand what to do
+    when we see that they don't. We verify with IDS.
  
 - An IDS is: 
   - A set of techniques using a combination of software, hardware, and
     administrative policies in order to monitor a computer system or
     network of systems for policy violations, unauthorized access, or
     malicious activity.
+    
+- Host-based IDS:
+  - IDS that analyzes computer activity data.
 
-- Signature-based IDS:
-  - This type of IDS checks packets traveling across a network
-    against a known set of patterns recognized as likely attacks.
-
-- Statistical anomaly-based IDS:
-  - This type of IDS alerts when an abnormal event takes place on a
-    network, such as a spike of traffic to a particular server or
-    region.
+- Network-based IDS:
+  - IDS that analyzes network activity data.
 
 \note{The intent of an IDS is to produce a report for
 administrators of detected policy violations, which may or may not
