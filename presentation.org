@@ -121,7 +121,7 @@ comments and notes in the same page.
 ** Inescapable Vulnerabilities of Computer Systems
 
 + Our world functions on computing systems and their networks. These
-  systems are vunlerable to unauthorized access and malicious activity
+  systems are vulnerable to unauthorized access and malicious activity
   so we implement security controls, install anti-malware software,
   set access control restrictions, etc.
   
@@ -134,7 +134,7 @@ comments and notes in the same page.
 
 \note{IDSs fill the gap that exists between the preventative safety
 measures that administrators setup to protect their systems against
-known attacks, and attacks that are nevertheless successfull. An IDS
+known attacks, and attacks that are nevertheless successful. An IDS
 is like a security camera in a bank vault: if the system was perfect
 they would be superfluous, but with the admission that there will be
 faults in a system's security, the IDS records what policy violations,
@@ -163,8 +163,8 @@ or stop the suspicious activity.
 such as sending an alarm, dropping malicious packets, resetting a
 connection and/or blocking traffic from an offending IP
 address. Because an IPS acts independently of a system or network
-admin, it often casues more trouble than it's worth by denying
-legitimate users service unjustly or rasing excessive false
+admin, it often causes more trouble than it's worth by denying
+legitimate users service unjustly or raising excessive false
 alarms. ("Intrusion prevention system," 2013)}
 
 * Proposed Solution :Both:
@@ -182,7 +182,7 @@ intrusion detection systems.
   order to monitor a computer system or network of systems for policy
   violations, unauthorized access, or malicious activity.
 
-- This monitoring is perodically transformed into a report for further
+- This monitoring is periodically transformed into a report for further
   review by the system's administrators.
 
 ** How to we identify "misuse?" :Shea:
@@ -210,14 +210,14 @@ known threats.(1)
 - What does an anomaly look like?
   - Network traffic spikes
   - Non-business hour user access
-  - Foreign IPs
+  - Foreign connection attempts
 
 \note{Note that an IDS cannot by itself see the difference between an
 innocent and malicious policy violation, so in actuality all it does
 is record policy violations. These policy violations may or may not
 correspond to an attack. An IDS is necessitated because most computer
 security issues are caused by insiders; that is, users who
-purposefully have significant privleges within a system (in order to
+purposefully have significant privileges within a system (in order to
 do their work), which would obviously not be blocked by a
 firewall. The majority of harm these insiders do is unintentional, yet
 are still recorded as policy violations [Pfleeger s7.5]. It is up to
@@ -243,7 +243,7 @@ Host-Based IDS confronts the "insider threat."
 Potential Insiders:
 - Back-Door admin accounts
 - Active ex-employee accounts
-- Standard users with inadvertantly elevated privledges.
+- Standard users with inadvertently elevated privileges.
 Potential Threats:
 - Trade Secret Read/Write
 - Data Falsification
@@ -281,7 +281,7 @@ Potential Threats:
 \vspace*{\fill}
 
 - Audit Policies
-  - Try to maintain managable quantity of event logs without sacrificing functionality.
+  - Try to maintain manageable quantity of event logs without sacrificing functionality.
   - Failure / Success logs for:  
     - User log-on / log-off
     - File access (read/write)
@@ -347,7 +347,7 @@ database of known malicious code signatures. Types of "attacks" caught
 by this system include: port scans, malformed packets (illegal TCP
 flag combinations, wrong sizes, etc.), connection attempts from
 reserved IP addresses (indicating the real source was masked), e-mail
-containing viruses, exploit shellcode sequences in packets (Domain
+containing viruses, exploit shell-code sequences in packets (Domain
 Name Service / Network Interface Card buffer overflow), flood of
 packets (Denial Of Service), etc. [Frederick].
 
@@ -373,12 +373,12 @@ where the IDS maps current activity onto a model of unacceptable
 activity, and alarms when they match [Pfleeger s7.5].}
 
 ** History :Shea:
-*** Timeline(1)
+*** Time-line(1)
 
 - 1980: James Anderson writes technical report "\textbf{Computer Security
         Threat Monitoring and Surveillance}."\\
 
-- 1985: Stanford Reasearch Insitute(SRI) builds inital prototype of
+- 1985: Stanford Research Institute(SRI) builds initial prototype of
         Intrusion Detection Expert System, \textbf{IDES}.\\
 
 - 1989: Beginnings of network intrusion detection field. Todd Herberlien
