@@ -110,7 +110,7 @@ comments and notes in the same page.
 ** DONE Fix Definition () thing
 ** TODO Finalize formatting
 
-* Introduction :Shea:
+# * Introduction :Shea:
 ** Prelude
 - Our "Overview" is the "Outline" page, which is clickable to the
   subsections of this presentation
@@ -119,24 +119,34 @@ comments and notes in the same page.
   navigation
 * Problem :Shea:
 ** Inescapable Vulnerabilities of Computer Systems
-- Computer systems and networks thereof are vulnerable to unauthorized
-  access and malicious activity. This vulnerability cannot be fully
-  mitigated because computer systems are used and maintained by
-  humans, which by their nature are fallible.
 
-- System and network administrators must implement accounting
-  techniques which record possible violations for further review.
++ Our world functions on computing systems and their networks. These
+  systems are vunlerable to unauthorized access and malicious activity
+  so we implement security controls, install anti-malware software,
+  set access control restrictions, etc.
+  
++ We need to be able to \textbf{verify} that the controls and
+  safeguards we put in place actually work and understand what to do
+  when we see that they don't.
 
-\note{IDSs fill the gap that exists between the preventative safety
-measures that administrators setup to protect their systems against
-known attacks, and attacks that are nevertheless successfull. An IDS
-is like a security camera in a bank vault: if the system was perfect
-they would be superfluous, but with the admission that there will be
-faults in a system's security, the IDS records what policy violations,
-which may catch possible intrusion attempts, in addition to any damage
-that may have been done, so that the violations can be reviewed, the
-damage can be addressed, and administrators can put into effect
-regressive security measures.}
+# + Computer systems and networks thereof are vulnerable to unauthorized
+#  access and malicious activity. This vulnerability cannot be fully
+#  mitigated because computer systems are used and maintained by
+#  humans, which by their nature are fallible.
+
+# + System and network administrators must implement accounting
+#  techniques which record possible violations for further review.
+
+# \note{IDSs fill the gap that exists between the preventative safety
+# measures that administrators setup to protect their systems against
+# known attacks, and attacks that are nevertheless successfull. An IDS
+# is like a security camera in a bank vault: if the system was perfect
+# they would be superfluous, but with the admission that there will be
+# faults in a system's security, the IDS records what policy violations,
+# which may catch possible intrusion attempts, in addition to any damage
+# that may have been done, so that the violations can be reviewed, the
+# damage can be addressed, and administrators can put into effect
+# regressive security measures.}
 
 * Potential Solutions :Both:
 ** Potential Solutions
@@ -144,7 +154,8 @@ regressive security measures.}
   :PROPERTIES:
   :BEAMER_env: block
   :END:
-Identify, log and report suspicious activity. 
+Identify, log and report suspicious activity, i.e anomalies or
+predefined patterns of misuse.
 
 *** Intrusion Prevention Systems :Andy:
   :PROPERTIES:
@@ -162,29 +173,134 @@ legitimate users service unjustly or rasing excessive false
 alarms. ("Intrusion prevention system," 2013)}
 
 * Proposed Solution :Both:
-** Intrusion Detection Systems (IDS) for System and Network Accountability :Shea:
-- An IDS is a set of techniques using a combination of software,
-  hardware, and administrative policies in order to monitor a computer
-  system or network of systems for policy violations, unauthorized
-  access, or malicious activity.
+** What is Intrusion Detection? :Shea:
+
+We \textbf{verify} that our controls and safeguards work with
+intrusion detection systems.
+\newline
+\newline
+*Intrusion detection:* 
+- Detecting and responding to "computer misuse."
+
+- An Intrusion Detection System(IDS) is a set of techniques using a
+  combination of software, hardware, and administrative policies in
+  order to monitor a computer system or network of systems for policy
+  violations, unauthorized access, or malicious activity.
 
 - This monitoring is perodically transformed into a report for further
   review by the system's administrators.
 
-\note{Note that an IDS cannot by itself see the difference between an
-innocent and malicious policy violation, so in actuality all it does
-is record policy violations. These policy violations may or may not
-correspond to an attack. An IDS is necessitated because most computer
-security issues are caused by insiders; that is, users who
-purposefully have significant privleges within a system (in order to
-do their work), which would obviously not be blocked by a
-firewall. The majority of harm these insiders do is unintentional, yet
-are still recorded as policy violations [Pfleeger s7.5]. It is up to
-the system administrators' periodic review of the IDS reports to sift
-through the recorded violations and determine which were malicious,
-which were honest mistakes, and which were false alarms.}
+** How to we identify "misuse?" :Shea:
+- To tackle the problem of detecting "misuse" we break intrusion detection into two parts:
+  - Misuse Detection 
+  - Anomaly Detection
+    
+** Misuse Detection
+- What does "misuse" look like?
+  - Policy violations?
+  - Unauthorized Read?
+  - Unauthorized Write?
+  - Denial of Service?
 
-*** Signature-based IDS
+\newpage
+
+Some IDS defines misuse as derviations from rigid definitions of
+"acceptable behavior," others by detecting patterns or "signatures" of
+known threats.
+
+** Anomaly Detection
+- What does an anomaly look like?
+  -  
+  - 
+  - 
+
+# \note{Note that an IDS cannot by itself see the difference between an
+# innocent and malicious policy violation, so in actuality all it does
+# is record policy violations. These policy violations may or may not
+# correspond to an attack. An IDS is necessitated because most computer
+# security issues are caused by insiders; that is, users who
+# purposefully have significant privleges within a system (in order to
+# do their work), which would obviously not be blocked by a
+# firewall. The majority of harm these insiders do is unintentional, yet
+# are still recorded as policy violations [Pfleeger s7.5]. It is up to
+# the system administrators' periodic review of the IDS reports to sift
+# through the recorded violations and determine which were malicious,
+# which were honest mistakes, and which were false alarms.}
+
+
+** Host-Based Intrusion Detection Systems
+
+\vspace*{\fill}
+
+An IDS is \textbf{Host-Based} when data analyzed comes from computer
+activity, i.e. processing info from event logs for applications and
+operating systems.
+
+\vspace*{\fill}
+\newpage
+\vspace*{\fill}
+
+Host-Based IDS confronts the "insider threat." 
+Potential Insiders:
+- Back-Door admin accounts. 
+- Active ex-employee accounts. 
+Potential Threats:
+- Trade Secret Read/Write
+- Data Falsification
+
+\vspace*{\fill}
+
+** Host-Based Operation
+
+\vspace*{\fill}
+
+- Tip-Off
+  - IDS looks for misuse and provides notification when misuse is probable.
+  - Real-time detection
+  - Batch detection
+  - Routine Forensics
+  - In-band tip-off
+  - Out-of-band tip-off
+
+\vspace*{\fill}
+\newpage
+\vspace*{\fill}
+
+- Surveillance
+  - Targeted individuals
+
+- Damage Assessment
+  - Post-incident assessment.
+
+- Compliance
+  - Looking for policy violations. 
+
+\vspace*{\fill}
+
+** Policy Management
+\vspace*{\fill}
+
+- Audit Policies
+  - Try to maintain managable quantity of event logs without sacrificing functionality.
+  - Failure / Success logs for:  
+    - Log-on / Log-off
+    - File access
+    - Policy Changes 
+    - etc...  
+
+\vspace*{\fill}
+\newpage 
+\vspace*{\fill}
+
+- Detection Policies
+  - "Signature" / Pattern Recognition, e.g. read/write access to objects with critical designation.
+\vspace*{\fill}
+*Example Pattern: Object "336-FinalExam.tex" accessed for read/write by user thom5468.*
+
+** Network-Based Intrusion Detection Systems
+
+** Network-Based Operation
+# *** Signature-based IDS
 This type of IDS checks packets traveling across a network against a
 known set of patterns recognized as likely attacks.
 
@@ -204,7 +320,7 @@ updated database, and slows down the IDS's ability to check against
 said database as its size grows. An SBIDS is also useless against new
 (zero-day) exploits.}
 
-*** Statistical anomaly-based IDS
+# *** Statistical anomaly-based IDS
 This type of IDS alerts when an abnormal event takes place on a
 network, such as a spike of traffic to a particular server or region.
 
@@ -218,11 +334,13 @@ detect when the system has entered an unsafe state; and model-based,
 where the IDS maps current activity onto a model of unacceptable
 activity, and alarms when they match [Pfleeger s7.5].}
 
-*** Host Based
-*** Network Based
+# *** Host Based
+# *** Network Based
+
 ** History :Shea:
 *** Timeline
 \vspace*{\fill}
+
 - 1980: James Anderson writes technical report "\textbf{Computer Security
         Threat Monitoring and Surveillance}."\\
 
@@ -247,7 +365,7 @@ activity, and alarms when they match [Pfleeger s7.5].}
 
 - 1999: Federal Intrusion Detection Network(\textbf{FIDNet}) is created. \\
 
-\vspace*{\fill}
+
 
 *** Early Systems
 - MIDAS: Multics INtrusion Detection and Alerting System.
@@ -282,7 +400,7 @@ directory integrity checker."
 reports all security-related events independently of the product brand
 or license giving rise to such event
 ** IDS Demo :Andy:
-
+   
 * Resources :noexport:
 ** Articles
 - [[http://en.wikipedia.org/wiki/Intrusion_detection_systems][WikiPedia's Article on Intrusion Detection Systems]]
