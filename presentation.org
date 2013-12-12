@@ -213,9 +213,9 @@ known threats.
 
 ** Anomaly Detection
 - What does an anomaly look like?
-  -  
-  - 
-  - 
+  - Network traffic spikes
+  - Non-business hour user access
+  - Foreign IPs
 
 # \note{Note that an IDS cannot by itself see the difference between an
 # innocent and malicious policy violation, so in actuality all it does
@@ -245,8 +245,8 @@ operating systems.
 
 Host-Based IDS confronts the "insider threat." 
 Potential Insiders:
-- Back-Door admin accounts. 
-- Active ex-employee accounts. 
+- Back-Door admin accounts
+- Active ex-employee accounts
 Potential Threats:
 - Trade Secret Read/Write
 - Data Falsification
@@ -273,10 +273,10 @@ Potential Threats:
   - Targeted individuals
 
 - Damage Assessment
-  - Post-incident assessment.
+  - Post-incident assessment
 
 - Compliance
-  - Looking for policy violations. 
+  - Looking for policy violations.
 
 \vspace*{\fill}
 
@@ -286,10 +286,10 @@ Potential Threats:
 - Audit Policies
   - Try to maintain managable quantity of event logs without sacrificing functionality.
   - Failure / Success logs for:  
-    - Log-on / Log-off
-    - File access
-    - Policy Changes 
-    - etc...  
+    - User log-on / log-off
+    - File access (read/write)
+    - Policy changes
+    - etc.  
 
 \vspace*{\fill}
 \newpage 
@@ -306,9 +306,8 @@ Potential Threats:
 - An IDS is \textbf{Network-Based} when it is used to analyze network
   packets. 
 
-- These packets can be "sniffed" (analyzed) by intercepting network
-  traffic, commonly TCP/IP, or they can be gathered from router or
-  switch output. 
+- These packets can be "sniffed" (analyzed) by intercepting (but not
+  stopping) network traffic as it flows through controlled chokepoints
 
 \vspace*{\fill}
 \newpage
@@ -335,7 +334,6 @@ Signatures can be found in a packet's content or in a packet's header.
 document. A network-based IDS may be directed to look for the pattern
 "FinalExam" in a packets contents so the act of copying
 "336-FinalExam.tex" over a FTP session would be logged.}
-
 
 ** Not in Use :noexport:
 # *** Signature-based IDS
@@ -388,7 +386,7 @@ activity, and alarms when they match [Pfleeger s7.5].}
 - 1987: \textbf{First Annual Intrusion Detection Workshop} at SRI.\\
 
 
-- 1989: Beginnings of newtork intrusion detection field. Todd Herberlien
+- 1989: Beginnings of network intrusion detection field. Todd Herberlien
       writes the Network Security Monitor(\textbf{NSM}) to capture TCP/IP
       packets.\\
 
@@ -406,9 +404,9 @@ activity, and alarms when they match [Pfleeger s7.5].}
 
 
 *** Early Systems
-- MIDAS: Multics INtrusion Detection and Alerting System.
+- MIDAS: Multics Intrusion Detection and Alerting System.
 - PDAT: Protocol Data Analysis Tool.
-- IDES:
+- IDES: 
 
 ** State of IDS today :Andy:
 ** Direction of IDS :Andy:
@@ -437,7 +435,6 @@ directory integrity checker."
 "Prelude collects, normalizes, sorts, aggregates, correlates and
 reports all security-related events independently of the product brand
 or license giving rise to such event
-** IDS Demo :Andy:
    
 * Resources :noexport:
 ** Articles
