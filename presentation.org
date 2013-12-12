@@ -373,7 +373,6 @@ where the IDS maps current activity onto a model of unacceptable
 activity, and alarms when they match [Pfleeger s7.5].}
 
 ** History :Shea:
-\vspace*{\fill}
 *** Timeline(1)
 
 - 1980: James Anderson writes technical report "\textbf{Computer Security
@@ -390,8 +389,6 @@ activity, and alarms when they match [Pfleeger s7.5].}
         Windows NT.\\
 
 \vspace*{\fill}
-
-\newpage
 
 ** Free IDS Tools (and detail about how they work) :Andy:
 
